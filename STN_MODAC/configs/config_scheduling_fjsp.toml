@@ -1,0 +1,47 @@
+[general]
+device = "auto"
+
+[environment]
+population_size = 50
+max_generations = 50
+nr_objectives = 2
+nr_actions = 2
+nr_of_environments = 10
+reward_factor = 1
+alternative_objectives = false
+problem_size = "j10_m5"    # j5_m5, j10_m5, j25_m5 currenty available
+instance_range = [0, 100] # [0,100] will generate instances from 0 to 99
+
+# save_results = true
+# test_instance = "FJSP/train/j5_m5/train_j5_m5_0.txt"
+
+
+[policy]
+actor_hidden_dim = 64
+critic_hidden_dim = 64
+
+[ppo]
+training_comment = "FJSP/temporal_gcn_concat_emb"
+problem_type = "scheduling"
+seed = 0
+buffer_size = 4096
+batch_size = 64
+learning_rate = 1e-3
+lr_decay = true
+gamma = 0.99
+max_epoch = 2000
+step_per_epoch = 500
+episode_per_collect = 10
+replay_buffer_size = 5000
+gae_lambda = 0.95
+max_grad_norm = 0.5
+vf_coef = 0.25
+ent_coef = 0.0
+reward_normalization = true
+action_scaling = true
+action_bound_method = "clip"
+eps_clip = 0.2
+value_clip = false
+dual_clip = 'None'
+advantage_normalization = 0
+recompute_advantage = 1

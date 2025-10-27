@@ -1,0 +1,9 @@
+{
+  "model_path": "C:/Users/s143036/PycharmProjects/AutoEA_development/STN_MODAC/trained_models/fjsp/scheduling_j10_m5_2obj/Jan08_04-39-26_gisatl100_r73545/policy.pth",
+  "test_problem_instance": ["/FJSP/test/j5_m5/test_j5_m5_0.txt"],
+  "_test_problem_instance": ["/FJSP_SRMN/test/instance_15_02.pickle"],
+  "nr_of_objectives": 2,
+  "population_size": 50,
+  "ngen": 50,
+  "rseed": 5
+}

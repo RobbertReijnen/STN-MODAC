@@ -1,0 +1,13 @@
+{
+  "problem_instance": "/fajsp_sdsts/dafjs/DAFJS01",
+  "nr_of_objectives": 2,
+  "alternative_objectives": false,
+  "population_size": 50,
+  "ngen": 5,
+  "rseed": 5,
+  "indpb": 0.02,
+  "cr": 0.7,
+  "save_results": true,
+  "logbook": true,
+  "plotting": true
+}
